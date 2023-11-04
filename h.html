@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Page Navigation</title>
+    <style>
+        html{
+            text-align: center;
+            margin-top: 10%;
+            background-image: url("background.jpg");
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>WELCOME TO LANGUAGE REVIVAL HUB KEYBOARD!</b></h1>
+    <br>
+    <p style="font-size: 30px;">Enjoy typing by selecting the keyboard.</p>
+    <br>
+    <label for="pageSelector">Select a keyboard:</label>
+    <select id="pageSelector">
+        <option value="page0">SELECT</option>
+        <option value="page1">HINDI</option>
+        <option value="page2">TAMIL</option>
+        <option value="page3">TELGU</option>
+    </select>
+
+    <script>
+        const pageSelector = document.getElementById("pageSelector");
+
+        pageSelector.addEventListener("change", function() {
+            const selectedPage = pageSelector.value;
+            const pageURLs = {
+                "Page0":"h.html",
+                "page1": "hindi.html",
+                "page2": "tamil.html",
+                "page3": "telgu.html"
+            };
+
+            if (selectedPage in pageURLs) {
+                window.location.href = pageURLs[selectedPage];
+            }
+        });
+    </script>
+</body>
+</html>

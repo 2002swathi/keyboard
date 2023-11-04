@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hindi Virtual Keyboard</title>
+    <style>
+        .keyboard-button {
+            width: 90px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            margin: 5px;
+            cursor: pointer;
+			background-color: aqua;
+        }
+        #keyboard{
+			background-color: black;
+		}
+		h1{
+			text-align: center;
+		}
+		#output{
+			margin-left: 30%;
+		}
+    </style>
+</head>
+<body>
+	<h1>TELGU KEYBOARD</h1>
+    <div id="keyboard">
+		<button class="keyboard-button" onclick="addToInput('అ')">అ(a)</button>
+		<button class="keyboard-button" onclick="addToInput('ఆ')">ఆ(aa)</button>
+		<button class="keyboard-button" onclick="addToInput('ఇ')">ఇ(i)</button>
+		<button class="keyboard-button" onclick="addToInput('ఈ')">ఈ(ii)</button>
+		<button class="keyboard-button" onclick="addToInput('ఉ')">ఉ(u)</button>
+		<button class="keyboard-button" onclick="addToInput('ఊ')">ఊ(uu)</button>
+		<button class="keyboard-button" onclick="addToInput('ఊ')">ఊ(r)</button>
+		<button class="keyboard-button" onclick="addToInput('ఌ')">ఌ(l)</button>
+		<button class="keyboard-button" onclick="addToInput('ఎ')">ఎ(e)</button>
+		<button class="keyboard-button" onclick="addToInput('ఏ')">ఏ(ee)</button>
+		<button class="keyboard-button" onclick="addToInput('ఐ')">ఐ(ɑi)</button>
+		<button class="keyboard-button" onclick="addToInput('ఒ')">ఒ(o)</button>
+		<button class="keyboard-button" onclick="addToInput('ఓ')">ఓ(oo)</button>
+        <button class="keyboard-button" onclick="addToInput('ఔ')">ఔ(au)</button>
+        <button class="keyboard-button" onclick="addToInput('క')">క(ka)</button>
+        <button class="keyboard-button" onclick="addToInput('ఖ')">ఖ(kha)</button>
+		<button class="keyboard-button" onclick="addToInput('గ')">గ(ga)</button>
+		<button class="keyboard-button" onclick="addToInput('ఘ')">ఘ(gha)</button>
+		<button class="keyboard-button" onclick="addToInput('ఙ')">ఙ(nga)</button>
+		<button class="keyboard-button" onclick="addToInput('చ')">చ(ca)</button>
+		<button class="keyboard-button" onclick="addToInput('ఛ')">ఛ(cha)</button>
+		<button class="keyboard-button" onclick="addToInput('జ')">జ(ja)</button>
+		<button class="keyboard-button" onclick="addToInput('ఝ')">ఝ(jha)</button>
+		<button class="keyboard-button" onclick="addToInput('ఞ')">ఞ(nya)</button>
+		<button class="keyboard-button" onclick="addToInput('ట')">ట(tta)</button>
+		<button class="keyboard-button" onclick="addToInput('ఠ')">ఠ(ttha)</button>
+		<button class="keyboard-button" onclick="addToInput('డ')">డ(dda)</button>
+		<button class="keyboard-button" onclick="addToInput('ఢ')">ఢ(ddha)</button>
+		<button class="keyboard-button" onclick="addToInput('ణ')">ణ(nna)</button>
+		<button class="keyboard-button" onclick="addToInput('త')">త(ta)</button>
+		<button class="keyboard-button" onclick="addToInput('థ')">థ(tha)</button>
+		<button class="keyboard-button" onclick="addToInput('ద')">ద(da)</button>
+		<button class="keyboard-button" onclick="addToInput('ధ')">ధ(dha)</button>
+		<button class="keyboard-button" onclick="addToInput('న')">న(na)</button>
+		<button class="keyboard-button" onclick="addToInput('ప')">ప(pa)</button>
+		<button class="keyboard-button" onclick="addToInput('ఫ')">ఫ(pha)</button>
+		<button class="keyboard-button" onclick="addToInput('బ')">బ(ba)</button>
+		<button class="keyboard-button" onclick="addToInput('భ')">భ(bha)</button>
+		<button class="keyboard-button" onclick="addToInput('మ')">మ(ma)</button>
+		<button class="keyboard-button" onclick="addToInput('య')">య(ya)</button>
+		<button class="keyboard-button" onclick="addToInput('ర')">ర(ra)</button>
+		<button class="keyboard-button" onclick="addToInput('ఱ')">ఱ(rra)</button>
+		<button class="keyboard-button" onclick="addToInput('ల')">ల(la)</button>
+		<button class="keyboard-button" onclick="addToInput('ళ')">ళ(lla)</button>
+		<button class="keyboard-button" onclick="addToInput('ఴ')">ఴ(llla)</button>
+		<button class="keyboard-button" onclick="addToInput('వ')">వ(va)</button>
+		<button class="keyboard-button" onclick="addToInput('శ')">శ(sha)</button>
+        <button class="keyboard-button" onclick="addToInput('ష')">ష(ssa)</button>
+        <button class="keyboard-button" onclick="addToInput('స')">స(sa)</button>
+        <button class="keyboard-button" onclick="addToInput('హ')">హ(ha)</button>
+        <button class="keyboard-button" onclick="addToInput('్')">్</button>
+        <button class="keyboard-button" onclick="addToInput('ఁ')">ఁ</button>		
+        <button class="keyboard-button" onclick="addToInput('ం')">ం</button>
+        <button class="keyboard-button" onclick="addToInput('ః')">ః</button>
+        <button class="keyboard-button" onclick="clearInput()">Clear</button>
+    </div>
+	<br>
+	<br>
+    <textarea id="output" rows="4" cols="50"></textarea>
+
+    <script>
+        function addToInput(text) {
+            var outputTextarea = document.getElementById("output");
+            outputTextarea.value += text;
+        }
+
+        function clearInput() {
+            var outputTextarea = document.getElementById("output");
+            outputTextarea.value = "";
+        }
+    </script>
+</body>
+</html>

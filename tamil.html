@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamil Virtual Keyboard</title>
+    <style>
+         .keyboard-button {
+            width: 90px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            margin: 5px;
+            cursor: pointer;
+			background-color: aqua;
+        }
+        #keyboard{
+			background-color: black;
+		}
+		h1{
+			text-align: center;
+		}
+		#output{
+			margin-left: 30%;
+		}
+    </style>
+</head>
+<body>
+    <h1>TAMIL KEYBOARD</h1>
+    <div id="keyboard">
+        <button class="keyboard-button" onclick="addToInput('அ')">அ(/ɐ/)</button>
+		<button class="keyboard-button" onclick="addToInput('ஆ')">ஆ(/aː/)</button>
+		<button class="keyboard-button" onclick="addToInput('இ')">இ(/i/)</button>
+		<button class="keyboard-button" onclick="addToInput('ஈ')">ஈ(/iː)</button>
+		<button class="keyboard-button" onclick="addToInput('உ')">உ(/u/)</button>
+		<button class="keyboard-button" onclick="addToInput('ஊ')">ஊ(/uː/)</button>
+		<button class="keyboard-button" onclick="addToInput('எ')">எ(/e/)</button>
+		<button class="keyboard-button" onclick="addToInput('ஏ')">ஏ(/eː/)</button>
+		<button class="keyboard-button" onclick="addToInput('ஐ')">ஐ(/ɐi̯/)</button>
+		<button class="keyboard-button" onclick="addToInput('ஒ')">ஒ(/o/)</button>
+		<button class="keyboard-button" onclick="addToInput('ஓ')">ஓ(/oː/)</button>
+		<button class="keyboard-button" onclick="addToInput('ஔ')">ஔ(/ɐu̯/)</button>
+		<button class="keyboard-button" onclick="addToInput('க')">க(/k/)</button>
+        <button class="keyboard-button" onclick="addToInput('ங')">ங(/ŋ/)</button>
+        <button class="keyboard-button" onclick="addToInput('ச')">ச(/t͡ʃ,s/)</button>
+        <button class="keyboard-button" onclick="addToInput('ஞ')">ஞ(/ɲ/)</button>
+		<button class="keyboard-button" onclick="addToInput('ட')">ட(/ʈ/)</button>
+		<button class="keyboard-button" onclick="addToInput('ண')">ண(/ɳ/)</button>
+		<button class="keyboard-button" onclick="addToInput('த')">த(/t̪/)</button>
+		<button class="keyboard-button" onclick="addToInput('ந')">ந(/n̪/)</button>
+		<button class="keyboard-button" onclick="addToInput('ப')">ப(/p/)</button>
+		<button class="keyboard-button" onclick="addToInput('ம')">ம(/m/)</button>
+		<button class="keyboard-button" onclick="addToInput('ய')">ய(/j/)</button>
+		<button class="keyboard-button" onclick="addToInput('ர')">ர(/ɾ/)</button>
+		<button class="keyboard-button" onclick="addToInput('ல')">ல(/l/)</button>
+		<button class="keyboard-button" onclick="addToInput('வ')">வ(/ʋ/)</button>
+		<button class="keyboard-button" onclick="addToInput('ழ')">ழ(/ɻ/)</button>
+		<button class="keyboard-button" onclick="addToInput('ள')">ள(/ɭ/)</button>
+		<button class="keyboard-button" onclick="addToInput('ற')">ற(/r/)</button>
+		<button class="keyboard-button" onclick="addToInput('ன')">ன([n])</button>
+        <button class="keyboard-button" onclick="addToInput('ி')">ி</button>
+        <button class="keyboard-button" onclick="addToInput('ீ')">ீ</button>
+        <button class="keyboard-button" onclick="addToInput('ு')">ு</button>
+        <button class="keyboard-button" onclick="addToInput('ூ')">ூ</button>
+        <button class="keyboard-button" onclick="addToInput('ெ')">ெ</button>
+        <button class="keyboard-button" onclick="addToInput('ே')">ே</button>
+        <button class="keyboard-button" onclick="addToInput('ை')">ை</button>
+        <button class="keyboard-button" onclick="addToInput('ொ')">ொ</button>
+        <button class="keyboard-button" onclick="addToInput('ோ')">ோ</button>
+        <button class="keyboard-button" onclick="addToInput('ௌ')">ௌ</button>
+        <button class="keyboard-button" onclick="clearInput()">Clear</button>
+    </div>
+    <br>
+    <br>
+    <textarea id="output" rows="4" cols="50"></textarea>
+
+    <script>
+        function addToInput(text) {
+            var outputTextarea = document.getElementById("output");
+            outputTextarea.value += text;
+        }
+
+        function clearInput() {
+            var outputTextarea = document.getElementById("output");
+            outputTextarea.value = "";
+        }
+    </script>
+</body>
+</html>
